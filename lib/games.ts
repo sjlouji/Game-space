@@ -16,6 +16,18 @@ export interface Game {
 // FIX: Replaced JSX with React.createElement to be valid in a .ts file
 export const GAMES: Game[] = [
   {
+    id: 'typing-practice',
+    title: 'Typing Master',
+    description: 'Adaptive typing practice that focuses on your weak keys and combinations.',
+    status: 'available',
+    categories: ['Skill', 'Classic'],
+    visual: React.createElement(
+      'div',
+      { className: 'w-24 h-20 p-2 flex items-center justify-center' },
+      React.createElement('div', { className: 'text-4xl font-mono text-sky-400' }, '⌨️')
+    ),
+  },
+  {
     id: '2048',
     title: '2048',
     description: 'Join the numbers to get the 2048 tile!',
@@ -271,18 +283,6 @@ export const GAMES: Game[] = [
       { className: 'w-16 h-16 relative' },
       React.createElement('div', { className: 'absolute top-3 left-1/2 transform -translate-x-1/2 w-9 h-9 rounded-full bg-rose-400' }),
       React.createElement('div', { className: 'absolute bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-2 bg-slate-800 rounded-full opacity-75 blur-sm' })
-    ),
-  },
-  {
-    id: 'typing-practice',
-    title: 'Typing Practice',
-    description: 'Adaptive typing practice that focuses on your weak keys and combinations.',
-    status: 'available',
-    categories: ['Skill', 'Classic'],
-    visual: React.createElement(
-      'div',
-      { className: 'w-24 h-20 p-2 flex items-center justify-center' },
-      React.createElement('div', { className: 'text-4xl font-mono text-sky-400' }, '⌨️')
     ),
   },
 ];

@@ -74,7 +74,7 @@ export const GAMES: Game[] = [
     title: 'Tic Tac Toe',
     description: 'Classic Xs and Os. Can you get three in a row?',
     status: 'available',
-    categories: ['Classic', 'Puzzle', 'Strategy'],
+    categories: ['Classic', 'Strategy', 'Puzzle'],
     visual: React.createElement(
       'div',
       { className: 'w-20 h-20 grid grid-cols-3 grid-rows-3 relative' },
@@ -98,7 +98,7 @@ export const GAMES: Game[] = [
     title: 'Block Fall',
     description: 'Classic falling block puzzle. Clear lines to score!',
     status: 'available',
-    categories: ['Classic', 'Puzzle', 'Arcade'],
+    categories: ['Puzzle', 'Classic', 'Arcade'],
     visual: React.createElement(
       'div',
       { className: 'w-24 h-24 p-2 grid grid-cols-4 grid-rows-4 gap-1' },
@@ -157,7 +157,7 @@ export const GAMES: Game[] = [
     title: 'Snake',
     description: 'Eat the food, grow your snake, and avoid the walls!',
     status: 'available',
-    categories: ['Arcade', 'Classic', 'Skill'],
+    categories: ['Classic', 'Arcade', 'Skill'],
     visual: React.createElement(
       'div',
       { className: 'w-24 h-20 p-2 relative' },
@@ -173,7 +173,7 @@ export const GAMES: Game[] = [
     title: 'Connect Four',
     description: 'Drop your discs and be the first to get four in a row!',
     status: 'available',
-    categories: ['Strategy', 'Classic', 'Puzzle'],
+    categories: ['Strategy', 'Puzzle', 'Classic'],
     visual: React.createElement(
       'div',
       { className: 'w-24 h-20 p-2 grid grid-cols-5 gap-1' },
@@ -224,7 +224,7 @@ export const GAMES: Game[] = [
     id: 'sudoku',
     title: 'Sudoku',
     description: 'A classic logic puzzle. Fill the grid with numbers 1-9.',
-    status: 'coming-soon',
+    status: 'available',
     categories: ['Puzzle', 'Strategy', 'Classic'],
     visual: React.createElement(
       'div', { className: 'w-20 h-20 grid grid-cols-3 grid-rows-3 gap-0.5 bg-slate-600 p-1 rounded' },
@@ -241,7 +241,7 @@ export const GAMES: Game[] = [
     title: 'Memory Match',
     description: 'Flip cards and find all the matching pairs. Test your recall!',
     status: 'coming-soon',
-    categories: ['Memory', 'Puzzle', 'Classic'],
+    categories: ['Memory', 'Classic', 'Puzzle'],
     visual: React.createElement(
       'div', { className: 'w-24 h-20 p-2 grid grid-cols-4 grid-rows-2 gap-2' },
       React.createElement('div', { className: 'bg-sky-500 rounded-md text-2xl flex items-center justify-center' }, '🧠'),

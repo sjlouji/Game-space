@@ -1413,16 +1413,16 @@ const TypingPracticeScreen: React.FC = () => {
                 });
               }}
               disabled={isActive}
-              className="appearance-none bg-slate-800 border border-slate-600 text-neutral-100 px-5 py-2.5 pr-10 rounded-lg text-sm font-medium cursor-pointer transition-all duration-200 hover:bg-slate-750 hover:border-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-slate-800 disabled:hover:border-slate-600 shadow-sm"
+              className="appearance-none bg-slate-800 border border-slate-600 text-sky-400 px-5 py-2.5 pr-10 rounded-lg text-sm font-semibold cursor-pointer transition-all duration-200 hover:bg-slate-750 hover:border-sky-500/50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-slate-800 disabled:hover:border-slate-600 shadow-sm min-w-[240px]"
             >
-            <option value="beginner">Beginner (Home row)</option>
-            <option value="intermediate">Intermediate (+ G, H)</option>
-            <option value="advanced">Advanced (All keys)</option>
-            <option value="expert">Expert (All keys, higher threshold)</option>
-            <option value="sentences">Sentences Only</option>
+            <option value="beginner" className="bg-slate-800 text-sky-400">Beginner (Home row)</option>
+            <option value="intermediate" className="bg-slate-800 text-sky-400">Intermediate (+ G, H)</option>
+            <option value="advanced" className="bg-slate-800 text-sky-400">Advanced (All keys)</option>
+            <option value="expert" className="bg-slate-800 text-sky-400">Expert (All keys, higher threshold)</option>
+            <option value="sentences" className="bg-slate-800 text-sky-400">Sentences Only</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <svg className="w-5 h-5 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-sky-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </div>

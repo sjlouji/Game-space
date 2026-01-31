@@ -10,7 +10,7 @@ interface GameCenterProps {
 type FilterType = 'all' | 'available' | 'coming-soon' | GameCategory;
 
 const GameCenter: React.FC<GameCenterProps> = ({ games, onSelectGame }) => {
-  const [activeFilter, setActiveFilter] = useState<FilterType>('all');
+  const [activeFilter, setActiveFilter] = useState<FilterType>('available');
   
   const allCategories = Array.from(new Set(games.flatMap(game => game.categories)));
 
